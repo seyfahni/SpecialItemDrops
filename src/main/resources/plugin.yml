@@ -1,0 +1,22 @@
+name: "${project.name}"
+version: ${bukkitPlugin.version}
+main: ${bukkitPlugin.mainClass}
+
+load: ${bukkitPlugin.load}
+database: ${bukkitPlugin.database}
+
+depend: [${bukkitPlugin.depend}]
+softdepend: [${bukkitPlugin.softdepend}]
+loadbefore: [${bukkitPlugin.loadbefore}]
+
+description: "${project.description}"
+author: '${bukkitPlugin.author}'
+authors: [${bukkitPlugin.authors}]
+website: "${project.url}"
+
+commands:
+  sidconfre:
+    description: 'Reloads the Special Item-Drop configuration file and updates the listener.'
+    usage: /<command>
+    permission: sid.reload
+    aliases: [sid, specialitemdrops, sidconfigreload, sidreload, sidconf, sidre]

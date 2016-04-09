@@ -1,0 +1,48 @@
+# You can add more events, but they must have different names
+xmas:
+  # What item to drop; for more items just add another event
+  item:
+    type: GOLD_NUGGET
+    data: 0
+    amount:
+      min: 1
+      max: 1
+    name: 'Weihnachtsgeld'
+    lore:
+      - 'Für den Weihnachtsmarkt...'
+  mobs:
+    # Only given entity types if true all entity types exept given if false
+    whitelist: true
+    list:
+      - BLAZE
+      - CAVE_SPIDER
+      - CREEPER
+      - ENDER_DRAGON
+      - ENDERMAN
+      - ENDERMITE
+      - GHAST
+      - MAGMA_CUBE
+      - PIG_ZOMBIE
+      - SILVERFISH
+      - SKELETON
+      - SLIME
+      - SPIDER
+      - WITCH
+      - WITHER
+      - ZOMBIE
+  effects:
+    whitelist: false
+    noeffects: true
+    list:
+      - SLOW_DIGGING
+  worlds:
+    whitelist: true
+    list:
+      - world
+      - world_nether
+      - world_the_end
+  date:
+    from: '2015-12-01'
+    to: '2015-12-26'
+  # Probability is (1 / rarity)
+  rarity: 20
