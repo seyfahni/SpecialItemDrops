@@ -1,6 +1,6 @@
 name: "${project.name}"
-version: ${bukkitPlugin.version}
-main: ${bukkitPlugin.mainClass}
+version: ${version}
+main: ${mainClass}
 
 load: ${bukkitPlugin.load}
 database: ${bukkitPlugin.database}
@@ -10,8 +10,8 @@ softdepend: [${bukkitPlugin.softdepend}]
 loadbefore: [${bukkitPlugin.loadbefore}]
 
 description: "${project.description}"
-author: '${bukkitPlugin.author}'
-authors: [${bukkitPlugin.authors}]
+author: '${project.developers[0].id}'
+authors: [${project.developers[1].id}]
 website: "${project.url}"
 
 commands:
